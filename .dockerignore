@@ -1,0 +1,9 @@
+.git
+.github
+.antigravity
+.gitignore
+README.md
+docker-compose.yml
+Dockerfile
+*.md
+.DS_Store

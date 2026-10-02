@@ -1,0 +1,23 @@
+# ===========================================
+# Local Development with Docker Compose
+# ===========================================
+# Usage:
+#   docker compose up        → Start on http://localhost:8080
+#   docker compose up --build → Rebuild and start
+#   docker compose down      → Stop
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ghadeer-portfolio
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
