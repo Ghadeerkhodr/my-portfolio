@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghadeer Alkhodr — DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Ghadeer Alkhodr, a DevOps Engineer specializing in cloud infrastructure, Docker, Kubernetes, CI/CD pipelines, and automation.">
+  <meta name="author" content="Ghadeer Alkhodr">
+  <meta property="og:title" content="Ghadeer Alkhodr — DevOps Engineer">
+  <meta property="og:description" content="DevOps Engineer specializing in cloud infrastructure, containerization, and CI/CD automation.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background mesh -->
+  <div class="mesh-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">{</span>
+        G<span class="logo-slash">/</span>A
+        <span class="logo-bracket">}</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section id="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <!-- Avatar -->
+      <div class="hero-avatar">
+        <img src="assets/avatar.webp" alt="Ghadeer Alkhodr" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;font-family:Outfit,sans-serif;font-weight:800;background:linear-gradient(135deg,#0e0e16,#1a1a2e);border-radius:50%;color:#00e5ff&quot;>GA</div>'">
+      </div>
+
+      <!-- Greeting -->
+      <p class="hero-greeting">// Hello, World! I'm</p>
+
+      <!-- Name -->
+      <h1 class="hero-name">
+        Ghadeer <span class="name-accent">Alkhodr</span>
+      </h1>
+
+      <!-- Typing tagline -->
+      <p class="hero-tagline">
+        $ <span id="typing-text"></span><span class="cursor"></span>
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="cta-projects">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline" id="cta-contact">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Text -->
+        <div class="about-text reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Building the Bridge Between Dev & Ops</h2>
+          <p>
+            I'm <strong>Ghadeer Alkhodr</strong>, a DevOps Engineer passionate about automating infrastructure, building robust CI/CD pipelines, and deploying scalable cloud-native applications.
+          </p>
+          <p>
+            With expertise in <strong>containerization</strong>, <strong>orchestration</strong>, and <strong>infrastructure-as-code</strong>, I bridge the gap between development and operations — ensuring reliable, fast, and secure software delivery.
+          </p>
+          <p>
+            I thrive on solving complex deployment challenges, optimizing cloud costs, and building systems that scale effortlessly. Whether it's spinning up Kubernetes clusters, automating with Terraform, or setting up monitoring stacks — I love making infrastructure <strong>invisible yet invincible</strong>.
+          </p>
+        </div>
+
+        <!-- Stats -->
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <span class="section-label reveal">Technical Skills</span>
+      <h2 class="section-title reveal">My Toolbox</h2>
+
+      <div class="skills-terminal reveal reveal-delay-1">
+        <div class="terminal-header">
+          <div class="terminal-dot red"></div>
+          <div class="terminal-dot yellow"></div>
+          <div class="terminal-dot green"></div>
+          <span class="terminal-title">ghadeer@devops:~/skills</span>
+        </div>
+
+        <div class="terminal-body">
+          <!-- Cloud & Infrastructure -->
+          <div class="skill-category">
+            <div class="skill-category-title">
+              <span class="prompt">$</span>
+              <span class="command">ls</span>
+              <span class="flag">--cloud-infrastructure</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-tag"><span>☁️ AWS</span></div>
+              <div class="skill-tag"><span>☁️ GCP</span></div>
+              <div class="skill-tag"><span>☁️ Azure</span></div>
+              <div class="skill-tag"><span>🏗️ Terraform</span></div>
+            </div>
+          </div>
+
+          <!-- Containers & Orchestration -->
+          <div class="skill-category">
+            <div class="skill-category-title">
+              <span class="prompt">$</span>
+              <span class="command">ls</span>
+              <span class="flag">--containers-orchestration</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-tag"><span>🐳 Docker</span></div>
+              <div class="skill-tag"><span>☸️ Kubernetes</span></div>
+              <div class="skill-tag"><span>🔄 Docker Compose</span></div>
+              <div class="skill-tag"><span>📦 Helm</span></div>
+            </div>
+          </div>
+
+          <!-- CI/CD & Automation -->
+          <div class="skill-category">
+            <div class="skill-category-title">
+              <span class="prompt">$</span>
+              <span class="command">ls</span>
+              <span class="flag">--cicd-automation</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-tag"><span>⚡ GitHub Actions</span></div>
+              <div class="skill-tag"><span>🔧 Jenkins</span></div>
+              <div class="skill-tag"><span>🚀 GitLab CI</span></div>
+              <div class="skill-tag"><span>📝 Ansible</span></div>
+            </div>
+          </div>
+
+          <!-- Programming & Scripting -->
+          <div class="skill-category">
+            <div class="skill-category-title">
+              <span class="prompt">$</span>
+              <span class="command">ls</span>
+              <span class="flag">--programming</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-tag"><span>🐍 Python</span></div>
+              <div class="skill-tag"><span>🌐 JavaScript</span></div>
+              <div class="skill-tag"><span>🎨 HTML / CSS</span></div>
+              <div class="skill-tag"><span>🌿 Django</span></div>
+              <div class="skill-tag"><span>🧪 Flask</span></div>
+              <div class="skill-tag"><span>🐚 Bash</span></div>
+            </div>
+          </div>
+
+          <!-- Monitoring & Logging -->
+          <div class="skill-category">
+            <div class="skill-category-title">
+              <span class="prompt">$</span>
+              <span class="command">ls</span>
+              <span class="flag">--monitoring</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-tag"><span>📊 Prometheus</span></div>
+              <div class="skill-tag"><span>📈 Grafana</span></div>
+              <div class="skill-tag"><span>🔍 ELK Stack</span></div>
+              <div class="skill-tag"><span>🐧 Linux</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <span class="section-label reveal">Portfolio</span>
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumbnail">
+            <div class="gradient-bg gradient-1">☁️</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Cloud Infrastructure Automation</h3>
+            <p class="project-description">
+              Automated multi-cloud infrastructure provisioning using Terraform modules. Includes VPC setup, auto-scaling groups, load balancers, and security policies across AWS and GCP.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Terraform</span>
+              <span class="project-tag">AWS</span>
+              <span class="project-tag">GCP</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source Code
+              </a>
+              <a href="#" class="project-link" aria-label="View live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-thumbnail">
+            <div class="gradient-bg gradient-2">🔄</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">CI/CD Pipeline Builder</h3>
+            <p class="project-description">
+              End-to-end CI/CD pipeline system using GitHub Actions and Docker. Supports automated testing, multi-stage builds, vulnerability scanning, and blue-green deployments.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">GitHub Actions</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">Bash</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source Code
+              </a>
+              <a href="#" class="project-link" aria-label="View live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-thumbnail">
+            <div class="gradient-bg gradient-3">📊</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Kubernetes Monitoring Dashboard</h3>
+            <p class="project-description">
+              Full observability stack for Kubernetes clusters with Prometheus, Grafana, and custom alerting rules. Real-time metrics, log aggregation, and automated incident response.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Kubernetes</span>
+              <span class="project-tag">Prometheus</span>
+              <span class="project-tag">Grafana</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source Code
+              </a>
+              <a href="#" class="project-link" aria-label="View live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal reveal-delay-4">
+          <div class="project-thumbnail">
+            <div class="gradient-bg gradient-4">🚀</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Django Deployment Platform</h3>
+            <p class="project-description">
+              Production-ready Django application deployment using Docker, Nginx, and Gunicorn. Features SSL termination, auto-scaling, database migrations, and health checks.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">Nginx</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source Code
+              </a>
+              <a href="#" class="project-link" aria-label="View live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <span class="section-label reveal">Get in Touch</span>
+      <h2 class="section-title reveal">Let's Connect</h2>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal reveal-delay-1">
+          <p>
+            I'm always open to discussing <strong>new projects</strong>, <strong>DevOps challenges</strong>, or opportunities to collaborate. Whether you need help with cloud infrastructure, CI/CD pipelines, or just want to say hello — feel free to reach out!
+          </p>
+
+          <div class="contact-socials">
+            <!-- Email -->
+            <a href="mailto:ghadeer@example.com" class="social-link" id="social-email" aria-label="Send email" title="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/ghadeer-alkhodr" target="_blank" rel="noopener noreferrer" class="social-link" id="social-linkedin" aria-label="LinkedIn profile" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/ghadeer-alkhodr" target="_blank" rel="noopener noreferrer" class="social-link" id="social-github" aria-label="GitHub profile" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form reveal reveal-delay-2" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="form-name">// Name</label>
+            <input type="text" id="form-name" name="name" placeholder="John Doe" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="form-email">// Email</label>
+            <input type="email" id="form-email" name="email" placeholder="john@example.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="form-message">// Message</label>
+            <textarea id="form-message" name="message" placeholder="Hey Ghadeer, I'd love to chat about..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="form-submit" style="width: 100%; justify-content: center;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <div class="container">
+      <p class="footer-terminal">
+        <span class="prompt">$</span> <span class="command">echo</span> "Thanks for visiting!" <span class="prompt">|</span> <span class="command">mail</span> ghadeer
+      </p>
+      <p class="footer-copyright">
+        © 2026 Ghadeer Alkhodr. Built with <span class="heart">♥</span> and lots of ☕
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
