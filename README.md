@@ -205,5 +205,5 @@ This project is open source and available for personal use and inspiration.
 ---
 
 <p align="center">
-  Built with ♥ and lots of ☕ by <strong>Ghadeer Alkhodr</strong>
+  Built with ♥ and lots of 🧉 كاسة متة by <strong>Ghadeer Alkhodr</strong>
 </p>
